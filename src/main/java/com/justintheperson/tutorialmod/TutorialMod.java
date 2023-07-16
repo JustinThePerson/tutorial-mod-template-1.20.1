@@ -1,5 +1,6 @@
 package com.justintheperson.tutorialmod;
 
+import com.justintheperson.tutorialmod.block.ModBlocks;
 import com.justintheperson.tutorialmod.item.ModItemGroups;
 import com.justintheperson.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -15,5 +16,6 @@ public class TutorialMod implements ModInitializer {
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }

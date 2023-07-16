@@ -8,10 +8,10 @@
   ],
   "key": {
     "#": {
-      "item": "tutorialmod:raw_ruby"
+      "item": "tutorialmod:tanzanite"
     }
   },
   "result": {
-    "item": "tutorialmod:raw_ruby_block"
+    "item": "tutorialmod:tanzanite_block"
   }
 }

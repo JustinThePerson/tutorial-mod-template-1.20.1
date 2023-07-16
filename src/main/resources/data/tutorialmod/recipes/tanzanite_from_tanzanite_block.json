@@ -3,11 +3,11 @@
   "category": "ingredients",
   "ingredients": [
     {
-      "item": "tutorialmod:raw_ruby_block"
+      "item": "tutorialmod:tanzanite_block"
     }
   ],
   "result": {
-    "item": "tutorialmod:raw_ruby",
+    "item": "tutorialmod:tanzanite",
     "count": 9
   }
 }

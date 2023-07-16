@@ -14,8 +14,18 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
     public static final Block RUBY_BLOCK = registerBlock("ruby_block",
             new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK)));
-    public static final Block RAW_RUBY_BLOCK = registerBlock("raw_ruby_block",
+    public static final Block RUBY_ORE = registerBlock("ruby_ore",
             new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE)));
+    public static final Block TANZANITE_ORE = registerBlock("tanzanite_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE)));
+    public static final Block DEEPSLATE_TANZANITE_ORE = registerBlock("deepslate_tanzanite_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_DIAMOND_ORE)));
+    public static final Block NETHERRACK_TANZANITE_ORE = registerBlock("netherrack_tanzanite_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.NETHER_GOLD_ORE)));
+    public static final Block ENDSTONE_TANZANITE_ORE = registerBlock("endstone_tanzanite_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.END_STONE)));
+    public static final Block TANZANITE_BLOCK = registerBlock("tanzanite_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK)));
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, name), block);

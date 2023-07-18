@@ -19,6 +19,10 @@ public class ModItemGroups {
                         entries.add(ModItems.RUBY);
 
                         entries.add(ModBlocks.RUBY_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_RUBY_ORE);
+                        entries.add(ModBlocks.NETHER_RUBY_ORE);
+                        entries.add(ModBlocks.END_STONE_RUBY_ORE);
+                        entries.add(ModBlocks.RAW_RUBY_BLOCK);
                         entries.add(ModBlocks.RUBY_BLOCK);
                     }).build());
     public static final ItemGroup TANZANITE_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -30,9 +34,19 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.TANZANITE_ORE);
                         entries.add(ModBlocks.DEEPSLATE_TANZANITE_ORE);
-                        entries.add(ModBlocks.NETHERRACK_TANZANITE_ORE);
-                        entries.add(ModBlocks.ENDSTONE_TANZANITE_ORE);
+                        entries.add(ModBlocks.NETHER_TANZANITE_ORE);
+                        entries.add(ModBlocks.END_STONE_TANZANITE_ORE);
                         entries.add(ModBlocks.TANZANITE_BLOCK);
+                    }).build());
+
+    public static final ItemGroup METAL_DETECTOR_GROUP = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(TutorialMod.MOD_ID, "metal_detector"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.metal_detector"))
+                    .icon(() -> new ItemStack(ModItems.METAL_DETECTOR)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.METAL_DETECTOR);
+                        entries.add(ModItems.GOLDEN_METAL_DETECTOR);
+                        entries.add(ModItems.DIAMOND_METAL_DETECTOR);
+                        entries.add(ModItems.NETHERITE_METAL_DETECTOR);
                     }).build());
     public static void registerItemGroups(){
         TutorialMod.LOGGER.info("Registering Item Groups for " + TutorialMod.MOD_ID);

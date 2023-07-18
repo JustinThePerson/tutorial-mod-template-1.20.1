@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "tutorialmod:block/ruby_ore"
+    "all": "tutorialmod:block/deepslate_ruby_ore"
   }
 }

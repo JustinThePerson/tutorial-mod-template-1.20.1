@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "tutorialmod:ruby_ore",
+    "tutorialmod:raw_ruby_block",
+    "tutorialmod:ruby_block",
+    "tutorialmod:tanzanite_block",
+    "tutorialmod:tanzanite_ore"
+  ]
+}

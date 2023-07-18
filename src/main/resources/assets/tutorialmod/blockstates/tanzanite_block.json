@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "tutorialmod:block/tanzanite_block" }
+    "": {
+      "model": "tutorialmod:block/tanzanite_block"
+    }
   }
 }

@@ -20,7 +20,7 @@ public class ModItems {
     public static final Item TANZANITE = registerItem("tanzanite",
             new Item(new FabricItemSettings()));
 
-    public static final Item Eight_Ball = registerItem("eight_ball",
+    public static final Item EIGHT_BALL = registerItem("eight_ball",
             new EightBallItem(new FabricItemSettings().maxCount(1)));
 
     public static final Item METAL_DETECTOR = registerItem(

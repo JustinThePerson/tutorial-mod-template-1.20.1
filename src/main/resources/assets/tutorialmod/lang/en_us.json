@@ -25,8 +25,12 @@
 
   "item.tutorialmod.eight_ball": "Eight Ball",
 
+  "block.tutorialmod.jumpy_block": "Jumpy Block",
+
   "itemgroup.tanzanite": "Tanzanite",
   "itemgroup.ruby": "Ruby",
   "itemgroup.metal_detector": "Metal Detector",
-  "itemgroup.eight_ball": "Eight Ball"
+  "itemgroup.eight_ball": "Eight Ball",
+  "itemgroup.jumpy_block": "Jumpy Block"
+
 }

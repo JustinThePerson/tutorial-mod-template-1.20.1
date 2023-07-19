@@ -3,6 +3,7 @@ package com.justintheperson.tutorialmod.item;
 import com.justintheperson.tutorialmod.TutorialMod;
 import com.justintheperson.tutorialmod.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -52,9 +53,12 @@ public class ModItemGroups {
     public static final ItemGroup EIGHT_BALL_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(TutorialMod.MOD_ID, "eight_ball"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.eight_ball"))
-                    .icon(() -> new ItemStack(ModItems.Eight_Ball)).entries((displayContext, entries) -> {
-                        entries.add(ModItems.Eight_Ball);
-                    }).build());
+                    .icon(() -> new ItemStack(ModItems.EIGHT_BALL)).entries((displayContext, entries) -> entries.add(ModItems.EIGHT_BALL)).build());
+
+    public static final ItemGroup JUMPY_BLOCK_GROUP = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(TutorialMod.MOD_ID, "jumpy_block"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.jumpy_block"))
+                    .icon(() -> new ItemStack(ModBlocks.JUMPY_BLOCK)).entries((displayContext, entries) -> entries.add(ModBlocks.JUMPY_BLOCK)).build());
     public static void registerItemGroups(){
         TutorialMod.LOGGER.info("Registering Item Groups for " + TutorialMod.MOD_ID);
     }

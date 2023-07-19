@@ -1,6 +1,7 @@
 package com.justintheperson.tutorialmod.block;
 
 import com.justintheperson.tutorialmod.TutorialMod;
+import com.justintheperson.tutorialmod.block.custom.jumpyblock.JumpyBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -38,6 +39,9 @@ public class ModBlocks {
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.END_STONE).strength(3.5f), UniformIntProvider.create(4, 7)));
     public static final Block TANZANITE_BLOCK = registerBlock("tanzanite_block",
             new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK)));
+
+    public static final Block JUMPY_BLOCK = registerBlock("jumpy_block",
+            new JumpyBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK)));
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);

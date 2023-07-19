@@ -28,6 +28,6 @@ public class EightBallItem extends Item {
     }
 
     private int getRandomNumber(){
-        return Random.createLocal().nextInt(8);
+        return Random.createLocal().nextInt(8) + 1;
     }
 }

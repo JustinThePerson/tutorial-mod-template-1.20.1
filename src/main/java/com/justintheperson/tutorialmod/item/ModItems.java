@@ -1,17 +1,13 @@
 package com.justintheperson.tutorialmod.item;
 
 import com.justintheperson.tutorialmod.TutorialMod;
+import com.justintheperson.tutorialmod.item.custom.eightball.EightBallItem;
 import com.justintheperson.tutorialmod.item.custom.metaldetectors.MetalDetectorItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class ModItems {
     public static final Item RAW_RUBY = registerItem("raw_ruby",
@@ -23,6 +19,9 @@ public class ModItems {
             new Item(new FabricItemSettings()));
     public static final Item TANZANITE = registerItem("tanzanite",
             new Item(new FabricItemSettings()));
+
+    public static final Item Eight_Ball = registerItem("eight_ball",
+            new EightBallItem(new FabricItemSettings().maxCount(1)));
 
     public static final Item METAL_DETECTOR = registerItem(
             "metal_detector",

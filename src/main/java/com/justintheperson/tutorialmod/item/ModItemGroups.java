@@ -48,6 +48,13 @@ public class ModItemGroups {
                         entries.add(ModItems.DIAMOND_METAL_DETECTOR);
                         entries.add(ModItems.NETHERITE_METAL_DETECTOR);
                     }).build());
+
+    public static final ItemGroup EIGHT_BALL_GROUP = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(TutorialMod.MOD_ID, "eight_ball"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.eight_ball"))
+                    .icon(() -> new ItemStack(ModItems.Eight_Ball)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.Eight_Ball);
+                    }).build());
     public static void registerItemGroups(){
         TutorialMod.LOGGER.info("Registering Item Groups for " + TutorialMod.MOD_ID);
     }

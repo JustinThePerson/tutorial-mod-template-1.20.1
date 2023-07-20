@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:gold_ingot"
+  },
+  "base": {
+    "item": "tutorialmod:metal_detector"
+  },
+  "result": {
+    "item": "tutorialmod:golden_metal_detector"
+  },
+  "template": {
+    "item": "minecraft:gold_ingot"
+  }
+}

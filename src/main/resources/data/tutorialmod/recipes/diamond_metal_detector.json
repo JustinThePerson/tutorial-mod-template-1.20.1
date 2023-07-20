@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:diamond"
+  },
+  "base": {
+    "item": "tutorialmod:golden_metal_detector"
+  },
+  "result": {
+    "item": "tutorialmod:diamond_metal_detector"
+  },
+  "template": {
+    "item": "minecraft:diamond"
+  }
+}

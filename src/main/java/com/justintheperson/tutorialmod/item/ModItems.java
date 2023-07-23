@@ -3,6 +3,7 @@ package com.justintheperson.tutorialmod.item;
 import com.justintheperson.tutorialmod.TutorialMod;
 import com.justintheperson.tutorialmod.item.custom.eightball.EightBallItem;
 import com.justintheperson.tutorialmod.item.custom.metaldetectors.MetalDetectorItem;
+import com.justintheperson.tutorialmod.item.custom.modfoodcomponents.ModFoodComponents;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -44,6 +45,9 @@ public class ModItems {
                     new FabricItemSettings().maxDamage(512),
                     264)
     );
+
+    public static final Item TOMATO = registerItem("tomato",
+            new Item(new FabricItemSettings().food(ModFoodComponents.TOMATO)));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM,

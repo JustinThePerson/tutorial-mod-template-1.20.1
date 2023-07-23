@@ -65,6 +65,11 @@ public class ModItemGroups {
             new Identifier(TutorialMod.MOD_ID, "sound_block"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.sound_block"))
                     .icon(() -> new ItemStack(ModBlocks.SOUND_BLOCK)).entries((displayContext, entries) -> entries.add(ModBlocks.SOUND_BLOCK)).build());
+
+    public static final ItemGroup TOMATO_GROUP = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(TutorialMod.MOD_ID, "tomato"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.tomato"))
+                    .icon(() -> new ItemStack(ModItems.TOMATO)).entries((displayContext, entries) -> entries.add(ModItems.TOMATO)).build());
     public static void registerItemGroups(){
         TutorialMod.LOGGER.info("Registering Item Groups for " + TutorialMod.MOD_ID);
     }

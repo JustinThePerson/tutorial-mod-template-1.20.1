@@ -29,11 +29,15 @@
 
   "block.tutorialmod.sound_block": "Sound Block",
 
+  "item.tutorialmod.tomato": "Tomato",
+
   "itemgroup.tanzanite": "Tanzanite",
   "itemgroup.ruby": "Ruby",
   "itemgroup.metal_detector": "Metal Detector",
   "itemgroup.eight_ball": "Eight Ball",
   "itemgroup.jumpy_block": "Jumpy Block",
-  "itemgroup.sound_block": "Sound Block"
+  "itemgroup.sound_block": "Sound Block",
+  "itemgroup.tomato": "Tomato"
+
 
 }

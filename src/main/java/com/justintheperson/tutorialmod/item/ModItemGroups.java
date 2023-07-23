@@ -60,6 +60,11 @@ public class ModItemGroups {
             new Identifier(TutorialMod.MOD_ID, "jumpy_block"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.jumpy_block"))
                     .icon(() -> new ItemStack(ModBlocks.JUMPY_BLOCK)).entries((displayContext, entries) -> entries.add(ModBlocks.JUMPY_BLOCK)).build());
+
+    public static final ItemGroup SOUND_BLOCK_GROUP = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(TutorialMod.MOD_ID, "sound_block"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.sound_block"))
+                    .icon(() -> new ItemStack(ModBlocks.SOUND_BLOCK)).entries((displayContext, entries) -> entries.add(ModBlocks.SOUND_BLOCK)).build());
     public static void registerItemGroups(){
         TutorialMod.LOGGER.info("Registering Item Groups for " + TutorialMod.MOD_ID);
     }

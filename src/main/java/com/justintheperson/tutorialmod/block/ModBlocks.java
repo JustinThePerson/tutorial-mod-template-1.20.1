@@ -2,6 +2,7 @@ package com.justintheperson.tutorialmod.block;
 
 import com.justintheperson.tutorialmod.TutorialMod;
 import com.justintheperson.tutorialmod.block.custom.jumpyblock.JumpyBlock;
+import com.justintheperson.tutorialmod.block.custom.soundblock.SoundBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -42,6 +43,9 @@ public class ModBlocks {
 
     public static final Block JUMPY_BLOCK = registerBlock("jumpy_block",
             new JumpyBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK)));
+
+    public static final Block SOUND_BLOCK = registerBlock("sound_block",
+            new SoundBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK)));
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
